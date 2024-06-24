@@ -36,3 +36,39 @@
 
 * We need to pay for the storage of our services, it is based on **Gigabytes(GB)**, how much time we are using.
 * Pay for Operations, We are doing operations such as read, write, delete, update for all these, they charged in a **little amount**. Pay per message, Pay per query to a database...
+
+## Describe Benefits of Cloud Computing
+### High Availability benefit of cloud computing
+* Even if the situation is too bad, planned and unplanned outages, services should be available to operate. That company having the High Availability.
+
+#### Planned Outages
+1. Hardware Replacement
+2. Deployment (Application updates)
+3. Migrating to new hosting provider
+4. Operating system security patches
+
+#### Unplanned Outages
+1. Natural Disasters
+2. Human Disasters (Cyber attacks)
+3. Power outages
+4. Stable Network connection
+5. Hardware failure
+6. Software bugs
+7. Poor scaling or architecture design
+
+### Scalability of Cloud Computing
+* By adding or removing of certain resources, our system needs to give **great performance**.
+* This scaling involves to handle the `traffic` in the system, but traffic is always fluctuate depends on day.
+* **E-commerce** website have `Black Friday`, that time they reboot their system and control the traffic.
+* Like School registrations are busy at June, and Tax systems are buys in April. During these time traffics are busy.
+
+#### Vertical Scaling
+* Scaling-up or Scaling-down.
+* We could add more number of resources on a single server.
+* But it has upper limit for Azure, 96 CPUs and 384 GB of memory.
+
+#### Horizontal Scaling
+* Scaling-out or Scaling-in.
+* We could add more servers itself to the system.
+* There is no limits
+* But it has increase complexities in load balancing.

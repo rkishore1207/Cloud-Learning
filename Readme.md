@@ -72,3 +72,18 @@
 * We could add more servers itself to the system.
 * There is no limits
 * But it has increase complexities in load balancing.
+
+### Elasticity of Cloud Computing (Auto-Scaling)
+* Instead of static capacity of system, it will **dynamically grows and shrinks** according to the `User demand`.
+* So, our system can able to utilize the **waste resources** also.
+
+### Reliability of Cloud Computing
+* All these Availability, Reliability and Predictability are there to **provide the solution** for the common problem.
+* `Reliability is, the system is intented to perform particular function without interruption and with a higt degree of accuracy.`
+* Without Reliability, **availability** is waste of thing, because availability in the sense, our system is doing work while all scenarios are outages, but what if our system itself perform in a wrong way instead of what we expect.
+
+### Availability Vs Reliability
+* Availability is an appearance to end users.
+* Reliability is the underlying truth.
+------
+* This includes **Transparency** during service issue.

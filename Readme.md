@@ -105,3 +105,12 @@
     6. Always up-to date platform services
     7. Encryption **By default**
     8. Dozens of Security Services like `Firewall`
+
+### Governance
+* How a Organization `does a Business`.
+* How they were defining, implementing, and Monitoring the Framework policies.
+* Organizations needs to ensure all Policies, and follows **HIPAA**(Health Insurance Portability and Acountability Act) to give quality services to the customers.
+* Follows Azure Policies and Blueprint.
+* Custom Roles (RBAC)
+* Soft Deletes => save data for certain period of time from Accidental delete.
+* Guides and Best practices such as **Cloud Adoption Framework**.

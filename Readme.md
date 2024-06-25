@@ -114,3 +114,34 @@
 * Custom Roles (RBAC)
 * Soft Deletes => save data for certain period of time from Accidental delete.
 * Guides and Best practices such as **Cloud Adoption Framework**.
+
+## Cloud Service Types
+1. IaaS - Infrastructure As a Service
+2. PaaS - Platform As a Service
+3. SaaS - Software As a Service
+
+> `As a Service?` => Instead of Owing a particular service, we can just took a **rent** on them. Pay for what you use. Cloud Providers could take care all the underlying properties such as buying, developing, maintaining, security, etc..
+
+## Azure Architecture and Services
+* Microsoft Azure's Datacenters are spreaded all over the world through `Regions`.
+* There are `60+` Regions are there, each Region have mininum **Three data centers** in it.
+* Most of the countries have **Paired Regions**, which involves fastest connection and pairs have Backup Datas, if any massive transfer wants to happen, that can achieve through **Region Pairs**.
+* **Light grey colour dot** in the Map represents, Data Centers is going to `coming soon`.
+
+![Canada Region](https://github.com/rkishore1207/Cloud-Learning/assets/146698138/7de89a25-e687-48a4-9468-66d7aa4383c8)
+
+![Brazil Region](https://github.com/rkishore1207/Cloud-Learning/assets/146698138/d6dd70c8-36b9-4f66-937e-e66f3436639b)
+
+![Qatar Region](https://github.com/rkishore1207/Cloud-Learning/assets/146698138/4c1d3ecb-dc05-4a71-861d-d6059744b743)
+
+![Region Pairs](https://github.com/rkishore1207/Cloud-Learning/assets/146698138/88ac15d5-04e7-47e5-aa6c-94a79e0beef2)
+
+* Not all 60+ regions are available to everyone, if we want then we have to the **local resident** of that Region or We need to be joined in the `Sovereign Regions`.
+
+#### Sovereign Regions
+* Those who wants to make their data private, or countrie's government or private organizations are come under Sovereign Regions.
+* They are not connected to **Public Cloud**.
+* If we want to join, we need sepearate `approval or subscription`.
+* We need to follow different compliance standards.
+
+![Cloud Mission](https://github.com/rkishore1207/Cloud-Learning/assets/146698138/835593f2-72ac-4ed4-9d8e-a3355ded46d1)

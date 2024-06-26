@@ -123,6 +123,7 @@
 > `As a Service?` => Instead of Owing a particular service, we can just took a **rent** on them. Pay for what you use. Cloud Providers could take care all the underlying properties such as buying, developing, maintaining, security, etc..
 
 ## Azure Architecture and Services
+### Regions
 * Microsoft Azure's Datacenters are spreaded all over the world through `Regions`.
 * There are `60+` Regions are there, each Region have mininum **Three data centers** in it.
 * Most of the countries have **Paired Regions**, which involves fastest connection and pairs have Backup Datas, if any massive transfer wants to happen, that can achieve through **Region Pairs**.
@@ -145,3 +146,25 @@
 * We need to follow different compliance standards.
 
 ![Cloud Mission](https://github.com/rkishore1207/Cloud-Learning/assets/146698138/835593f2-72ac-4ed4-9d8e-a3355ded46d1)
+
+### Availability Zones
+* Group of Data Centers inside the Regions are called Availability Zone, it would share Network, Security, etc...
+* But **Not every Regions** supports Availability Zones.
+* As well as **not every Service** supports Availability Zones, may that will resolve by updating them.
+* Regions which have Availability Zones
+
+![Availability Zone Regions](https://github.com/rkishore1207/Cloud-Learning/assets/146698138/7f3df252-0142-4fa9-8891-7c4d57d01451)
+
+#### Types of AZ Services
+1. Zonal Services
+2. Zone-Redundant Services
+3. Always available Services
+
+##### Zonal Services
+* Customers wish to deploy on **which Available zone** in tha Particular Region, and they can deploy their `resource's duplicates` into other Available zone in the same Region, for safety purpose.
+
+##### Zone-Redundant Services
+* Azure itself take care of deploying our duplicates into multiple Availability Zones.
+
+##### Always Available Services
+* There is one Global Service or Region, that was handled by Azure, if others goes down, it still remains.

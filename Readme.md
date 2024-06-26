@@ -180,3 +180,16 @@
 * One Resource should map to only one Resource Group.
 * `Permissions` (Read or Write) can be assigned to the Resource Group level.
 * But we could not create **intra Azure permissions** for the Resource to communicate with each other.
+
+### Subscriptions
+* Subscription is `Billing Unit` and Resource Groups are grouped under a single Subscriptions.
+* One can have **Multiple Subscriptions** and it would map with any payment type, like Credit card.
+* Subscription Plans in Azure
+
+![Subscription Plans](https://github.com/rkishore1207/Cloud-Learning/assets/146698138/433feb52-356d-4197-a8e0-400e7e59b536)
+
+* A Company's Subscription Strategy
+
+![Subscription Strategy](https://github.com/rkishore1207/Cloud-Learning/assets/146698138/0a45721e-527e-4854-bfa7-4a016c75c20c)
+
+> But a Company can operate in a **Single Subscription** also.

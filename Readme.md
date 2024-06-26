@@ -168,3 +168,15 @@
 
 ##### Always Available Services
 * There is one Global Service or Region, that was handled by Azure, if others goes down, it still remains.
+
+### Resources and Resource Groups
+
+![Resource](https://github.com/rkishore1207/Cloud-Learning/assets/146698138/fb60ae61-84be-4452-af8b-938d1a8373e1)
+
+* **Resources** are the services provide by Azure, that we can create for our purpose by Azure portal, CLI, Scirpts, etc...
+* We could deploy these Resources at our **preferred location or Regions**.
+* Resource groups are consists of group of Resources, it could have **resources from different Regions** also.
+* But the Resources inside the Resource Group should have `similar relations` such as deploy together, delete together.
+* One Resource should map to only one Resource Group.
+* `Permissions` (Read or Write) can be assigned to the Resource Group level.
+* But we could not create **intra Azure permissions** for the Resource to communicate with each other.

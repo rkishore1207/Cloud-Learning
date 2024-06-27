@@ -193,3 +193,56 @@
 ![Subscription Strategy](https://github.com/rkishore1207/Cloud-Learning/assets/146698138/0a45721e-527e-4854-bfa7-4a016c75c20c)
 
 > But a Company can operate in a **Single Subscription** also.
+
+* All Subscriptions are grouped under a single Management Group.
+
+## Azure Compute Services and Virtual Machines
+
+* Four Technical Pillars of Azure Services
+1. Compute Services
+2. Network Services
+3. Storage Services
+4. Database Services
+
+### Compute Services
+* `Executing a Code on the Server`
+
+![Computing Services](https://github.com/rkishore1207/Cloud-Learning/assets/146698138/753b220a-a193-4535-92b4-8bccd81981a6)
+
+#### Standalone Server Analogy
+* Server can host independently without affecting other servers.
+* Like a Single-detached house, we don't want disturb others but instead we can utilize common things like Water, Electricity, etc...
+* Virtual Machine in AWS is Called **EC2** instance. `(Elastic Compute Cloud)`.
+
+### Scaling Virtual Machines
+* We can increase the Configurations of VMs from 4CPU to 8CPU, this is Scale Up.
+* We can increase the VMs numbers also, this is Scale Out.
+
+### App Services or Web Apps
+* Our own application can able to run on the server in the Microsoft, we should package our code and configurations and deployed at the server, it can execute.
+* But we don't know, the underlying properties, like how server is executing, we cannot have access to Server settings.
+* Promise of Performance but no access to hardware.
+* It is PaaS (Platform).
+
+### Container Service
+* Container contains everything that a application need to execute in a `Container Image`.
+* Fastest and Easiest to deploy. It will automatically deploy to different environments.
+
+![Container Service](https://github.com/rkishore1207/Cloud-Learning/assets/146698138/2ec82881-5c0c-4372-b4e7-af72c321c263)
+
+### Azure Virtual Desktop
+* It's like a our own desktop that is deployed in the Azure, that is available for different device and for different Softwares.
+* Our Software installed, files can be available from anywhere.
+
+### Virtual Network (VNet)
+* It is Network which is analogy to Physical Network, but it doesn't have Cables, wires...
+* By default, two Virtual Machines in Azure are not allowed to talk with each other - **Security**.
+* In Azure, it's virtual because it's just an entry to the database, that establishes the path between **VM A and VM B**.
+* Iaas
+* While create VNet, we should be assign address space like IPv4 or IPv6 or both, after creation, if we want to increase the range, we could add extra ranges too.
+* It is `Private Network`, which cannot be accessed from outside of Azure or other networks inside of Azure.
+
+#### Subnet
+* VNets are divided into **Subnets**, if we create Subnet then that address should be Present in the Parent VNet.
+* All Subnet have Security Layer.
+* All Subnets are connected with VMs through **NIC(Network Interface Card)**.

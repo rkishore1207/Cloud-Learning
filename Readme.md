@@ -246,3 +246,48 @@
 * VNets are divided into **Subnets**, if we create Subnet then that address should be Present in the Parent VNet.
 * All Subnet have Security Layer.
 * All Subnets are connected with VMs through **NIC(Network Interface Card)**.
+
+### Containers
+* Not all Services supports Containers.
+* Azure Kubernetes Service (AKS) also called **Enterprise Grade Containers**.
+* We cannot run AKS in a **single Machine**, this is enterprise application need more than one system to Utilize this.
+* Another container is **Azure Container Instance**(ACI).
+* Last one is **Azure Container Apps**.
+
+## Azure Storage 
+
+* Azure Storage Services are
+1. Azure Blob Storage
+2. Disk Storage - Virtual Hard Disks (VHD)
+3. Azure File Storage
+4. Storage Tiers
+* THis is Infrastructure as a Service **(Iaas)**
+
+### Blob Storage or GPv2 or Standard Storage
+* It is **very cheap** and only pay according to usages.
+* It can accomodate about 5PB(Petabytes), which is 5000 terabytes or 5 million Gigabytes.
+* Not recommended for high deman workloads.
+* Binary Large Object (BLOB).
+* In AWS it is called S3 (Simple Storge Service).
+#### Location
+* We can create multiple blobs in same region or multiple regions.
+* It is great, we are keeping our blob to our nearest region.
+#### Redundancy
+* Azure will automatically took **3 copies** of our Azure blob storage.
+* If we use `Local Redundant` then our copies will stored in **same Data centers**, if we use `Zone Redundant` then copies will stored in **same Region** with different Data Centers.
+* If we choose `Global Redundant`, **6 copies** will be stored as 3 at same region, and other 3 are in different region but with same `Geo`.
+#### Access Tiers
+* Access Tiers is mainly for how much `Cost` it took for storing and retrieving data from blob.
+* For Premium, Cheapest to Access and Expensive to Store.
+1. `Hot` -> the default, balanced access.
+2. `Cool` -> little cheap to store (50%), expensive to Read/Write. For eg, **Log files** we can choose Cool, because we doesn't go so often to Read.
+3. `Cold` -> Same as Cool, but little cheaper to Store.
+4. `Archive` -> Basically it's for Offline, but cannot get immediate access to file, expensive for Operations.
+### Data Lake
+* Extremely for Big Data analytics.
+* Can hold petabytes and exabytes too.
+
+### Premium Storage Options
+* Use `SSD` (Solid State Disks)
+* It will Triple the **OPS(Operations Per Second)**.
+* Lower Latency but Expensive.

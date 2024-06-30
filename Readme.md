@@ -291,3 +291,28 @@
 * Use `SSD` (Solid State Disks)
 * It will Triple the **OPS(Operations Per Second)**.
 * Lower Latency but Expensive.
+
+#### Storage Explorer and Storage Browser
+* We can upload or access our own Storage accounts through local machine, this is achieved by storage explorer.
+* We can access, accounts through Browser by Storage Browser.
+
+### AZ Copy
+* If I want to copy the data from one container to other, one way is manually download all files into our Local system and uploaded in the second container.
+* Optimized way is Using **Azure Cloud Shell and AZ copy**.
+* First need to generate `SAS(Shared Access Signature) token` for both of the container. (Source and Destination)
+* Open Azure Cloud, Enter 
+> azcopy copy 'source link' 'destination link'
+
+#### Azure Migrate
+* We have our data's in the local environment, and we want to move our data into Azure Cloud.
+* To make things easier, Azure introduced one tool named `Azure Migrate`.
+* It will analyze our existing environment and recommend it's relevent environment on Cloud, so comfortable to Migrate.
+* And it also suggests, if our environment in not up-to date with cloud environment it asks us to do `Updation`.
+
+#### Azure DataBox
+* Migrate to Azure is Easy, but what if we have more quantities of data.
+* It will take more days or it is impossible to upload a big quantities of data into Azure.
+* So for that Azure have a Product named `Azure Data Box`, first they will mail us this Data Box, and we have to fill it and mail them back, **physically**.
+* They have the **encrypted option**, so we could transfer our data Securely.
+* After Azure uploaded our data into our Account, they would **erase our data** completely from the Data Box.
+* Data Box - *100TB*, Data Disk - *8TB*, Data Heavy - *1PB*

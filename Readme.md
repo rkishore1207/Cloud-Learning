@@ -296,7 +296,7 @@
 * We can upload or access our own Storage accounts through local machine, this is achieved by storage explorer.
 * We can access, accounts through Browser by Storage Browser.
 
-### AZ Copy
+#### AZ Copy
 * If I want to copy the data from one container to other, one way is manually download all files into our Local system and uploaded in the second container.
 * Optimized way is Using **Azure Cloud Shell and AZ copy**.
 * First need to generate `SAS(Shared Access Signature) token` for both of the container. (Source and Destination)
@@ -316,3 +316,16 @@
 * They have the **encrypted option**, so we could transfer our data Securely.
 * After Azure uploaded our data into our Account, they would **erase our data** completely from the Data Box.
 * Data Box - *100TB*, Data Disk - *8TB*, Data Heavy - *1PB*
+
+## Azure Identity, Access and Security
+* `Entra Id` is the Identity Provider which is similar to Azure AD (Active Directory).
+* In Old times, our client app sends **UserId and Password** to the server and Server checks if the **credential is valid** by communicate with `DataBase`.
+* So, we are **Force** our application to check credentials, and we were stored Passwords as **Plain text in DB**, that can easy to hack.
+* And we were used old hashing algorithm `MD5`, that also easy to break.
+* Followed **SALT** process, which means adding some random values to the passwords, but that also not great.
+* And No proper **password complexity**, just used 4 numerical numbers, this is not acceptable.
+* Not enforcing Password Change policies. If our password is 20 character long and that includes capital, small, numerics and special characters, then it's fine, no need to changes frequently.
+* Now, with the Entra Id, Client app gives UserId and Password to Entra Id Service and that will return `signed token`.
+* These token will be passed to our backend and our sever needs to validate that token, that's it for Authentication and Authorization.
+* `Single Sign On` - User already logged in to the Identity Service Provider (Entra Id), then all other logins in the company can **synchronize** that Azure login and use there.
+Eg, I am using my Microsoft Credential to Login Office Laptop.

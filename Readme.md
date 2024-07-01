@@ -329,3 +329,34 @@
 * These token will be passed to our backend and our sever needs to validate that token, that's it for Authentication and Authorization.
 * `Single Sign On` - User already logged in to the Identity Service Provider (Entra Id), then all other logins in the company can **synchronize** that Azure login and use there.
 Eg, I am using my Microsoft Credential to Login Office Laptop.
+
+### Multifactor Authentication or 2FA
+
+![Available MFA](https://github.com/rkishore1207/Cloud-Learning/assets/146698138/1c4ad2e1-f410-4787-b871-742bfffd1194)
+
+* For MultiFactor, there are some factors that 
+1. Something we `Know` - Passwords
+2. Something we `Have` - Authenticator or SMS
+3. Something we `Are` - FingerPrint or Face Recognition
+
+### Role Based Authentication
+1. `Owner` - They can make others Owner or contributers
+2. `Contributer` - They can have full access but can't give access to others
+3. `Reader` - Only access to View the contents
+
+### Zero Trust Model
+* Past 30 years ago, there is only a **boundry(Firewall)** between a organization's internal network(private) and Public network.
+* It would give access to all internal request, but now Microsoft Introduced *Zero-Trust Model*, that cannot give access even if it is internal, if it doesn't have token.
+
+1. Verify Explicitly - Give access based on Signed Token
+2. Use Least Privileged Access - Role based access
+3. Assuem breach
+
+* If we are acting as a admin for organization but for a several period of time, so for that we could enable **Just-In-Time or Just-Enable-Access**. (Admin for 30mins)
+
+### Defense in Depth
+![Security Layers](https://github.com/rkishore1207/Cloud-Learning/assets/146698138/144df6b4-4c48-4e39-b9f6-6bd298964358)
+
+![Defese in Depth](https://github.com/rkishore1207/Cloud-Learning/assets/146698138/6199feab-57d3-4ec4-ada9-de0df9de2156)
+
+

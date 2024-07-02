@@ -391,3 +391,9 @@ Eg, I am using my Microsoft Credential to Login Office Laptop.
 #### Types of Resource Locks
 1. Read Only
 2. Can Delete
+
+### Azure Resource Manager (ARM)
+* It is an engine which is work behind the scenes of **deploying and Managing** azure resources via created by JSON templates (ARM Template).
+* Management layer that allows us to create, update or delete resources called **deployments**.
+
+![Azure Resource Manager](https://github.com/rkishore1207/Cloud-Learning/assets/146698138/ab51e93a-c55c-4f37-89a6-810505aa2154)

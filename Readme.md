@@ -359,4 +359,41 @@ Eg, I am using my Microsoft Credential to Login Office Laptop.
 
 ![Defese in Depth](https://github.com/rkishore1207/Cloud-Learning/assets/146698138/6199feab-57d3-4ec4-ada9-de0df9de2156)
 
+## Cost Management in Azure
+* On Premises cost is fixed from the Service provider per month, it is not flexible for adding or removing services.
+* But In Azure, we should pay for what we will use per time per resource and it is flexible.
 
+### Factors that affect Azure Cloud Cost
+1. Time
+2. Consumption (Storage,Bandwidth,Compute)
+3. Service Tier - Basic, Standard, Premium
+4. Computing Power (CPU type/RAM)
+5. Software Licenses
+6. IP Addresses
+7. Reservations
+8. Per Transactions
+9. Bandwidth -> Egress is Cost and Ingress is Free
+
+### Azure Governance and Compliance
+* All the Service Provider needs to obey to the **IT Security Committee**, regarding their rules.
+* All servers must be running with updated **Microsoft extended Support Guidelines**.
+* All Servers must be backed Up with **24 hours** minimum.
+* Firewalls must block all inbound ports from Internet except `443`.
+* Only **Operations Support** have to reboot the Production Server.
+1. Azure Blueprints will be retired
+2. Template Specs - During creation of Subscription which ever Resources are available that should be present till that particular subscription will delete.
+3. Deployment Stacks - All the resources should be utilized or used as a single bundle. Eg, Resources are grouped under a Resource Groups.
+4. Azure Policies
+5. Resource Locks - Our Production resources are locked under a Locks, so that noOne can accidentally delete the Prod resource, only authorised persons can access to unlock that Resource Locks.
+6. Microsoft Purview (Data Governance)
+7. RBAC
+
+#### Types of Resource Locks
+1. Read Only
+2. Can Delete
+
+### Azure Resource Manager (ARM)
+* It is an engine which is work behind the scenes of **deploying and Managing** azure resources via created by JSON templates (ARM Template).
+* Management layer that allows us to create, update or delete resources called **deployments**.
+
+![Azure Resource Manager](https://github.com/rkishore1207/Cloud-Learning/assets/146698138/ab51e93a-c55c-4f37-89a6-810505aa2154)
